@@ -21,4 +21,4 @@ One of the widgets I like the most on the app are the coloured tabs, especially 
 I created a <a href="https://github.com/cmc00022/CityMapperTabs" target="_blank">demo</a> project on GitHub to show how to implement the coloured tabs along with using the new coordinator layout.
 Enjoy
 
-Cross-posted from <a href="http://panavtec.me/city-mapper-coloured-tabs-and-coordinator-layout" target="_blank">panavtec.me</a>
+Cross-posted from <a href="http://panavtec.me/city-mapper-coloured-tabs-and-coordinator-layout">panavtec.me</a>
