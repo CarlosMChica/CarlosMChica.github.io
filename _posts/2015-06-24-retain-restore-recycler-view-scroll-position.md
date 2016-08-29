@@ -5,7 +5,7 @@ name: Retain &amp; restore recycler view scroll position
 title: Retain &amp; restore recycler view scroll position
 date: 2015-06-22 17:00:00 +00:00
 image:
-    src: /assets/img/restore-position.jpg
+    href: /assets/img/restore-position.jpg
 categories: Android
 
 ---

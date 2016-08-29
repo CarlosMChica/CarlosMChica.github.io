@@ -144,11 +144,15 @@
     padding-top: 30px;
     padding-bottom: 30px;
     list-style: none;
-    border-bottom: 1px solid #eee;
 }
 
 .post-list-title a {
     text-decoration: none;
+}
+
+.post-list-image {
+    width: 350px;
+    height: 240px;
 }
 
 .post-list-description {
