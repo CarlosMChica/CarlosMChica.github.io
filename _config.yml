@@ -90,7 +90,7 @@ analytics :
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, C#, Clean Code, Software Design, DDD, TDD,  Design Patterns]
+skill_software_keywords: [Java, C#, Software Craftsmanship, Clean Code, Software Design, DDD, TDD, Agile,  Design Patterns]
 #skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
 skill_web_keywords: [HTML, CSS, JS, AngularJS, NodeJS, ExpressJS, MongoDB, Boostrap]
 skill_mobile_app_keywords: [Android, Material Design]
