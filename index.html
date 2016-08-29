@@ -13,15 +13,29 @@ css: ['index.css', 'sidebar-popular-repo.css']
 				{% for post in paginator.posts %}
 				<li class="post-list-item col-md-4">
 					<img class="post-list-image" src="{{ post.image.href }}">
+
+					<p class="post-list-meta">
+					<span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}  
+					</span>
+
+					{% assign text = post.content %}
+					{% include read_time.html %}
+					</p>
 					<h3 class="post-list-title">
 						<a href="{{ post.url }}">{{ post.title }}</a>
 					</h3>
+
 					<p class="post-list-description">
 					{{ post.excerpt | strip_html | strip }}
 					</p>
-					<p class="post-list-meta">
-					<span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+					{% for category in post.categories %}
+					<p class="post-category">
+					<span class="category octicon octicon-tag"></span>
+					{{ category }}
 					</p>
+					{% endfor %}
+					</p>
+
 				</li>
 			{% endfor %}
 			</div>

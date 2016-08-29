@@ -2,15 +2,25 @@
     <div class="container">
         <div id="jumbotron-meta-info">
             <h1>{{ page.title }}</h1>
-            <span class="meta-info">
-                {% if page.subtitle %}
-                    {{ page.subtitle }}
-                {% endif %}
-                {% if page.date %}
-                <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }}
-                {% endif %}
-		{% include read_time.html %}
-            </span>
+	    <span class="meta-info">
+
+		    {% if page.subtitle %}
+		    {{ page.subtitle }}
+		    {% endif %}
+
+		    {% if page.date %}
+		    <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }}
+		    {% endif %}
+
+		    {% assign text = page.content %}
+		    {% include read_time.html %}
+
+		    {% for category in page.categories %}
+		    <span class="category  octicon octicon-tag"></span>
+		    {{ category }}
+		    {% endfor %}
+
+	    </span>
         </div>
     </div>
 </section>
