@@ -6,6 +6,7 @@ title: 'Approaching Outside-in TDD on Android I'
 date: 2016-04-18 17:00:00 +00:00
 image:
     href: /assets/img/outside-in.png
+categories: Android TDD
 
 ---
 
@@ -49,13 +50,13 @@ public class Account {
 And one constraint: You are not allowed to add any other public method to this class.
 We have now used the outside-in TDD workflow in numerous projects and have adapted some aspects of it to suit developing on Android specifically. To demonstrate this, and to make it easier to follow, this post will follow the "Bank Kata" that Sandro Mancuso uses on his 'Outside-In' screencast. (You don't have to watched this screencast to follow along but it's useful as a primer on the concepts.) In his screencast the problem isn't build for Android, but we found it useful to have it as a focus.
 
-<h2>But, we broke that rule</h2>
+## But, we broke that rule
 
 It's worth mentioning that we broke this constraint somewhat to add another public method to the Account class. We did this to in order to attach the view to the account object. We needed to do so because we’ve chosen to use Android activities, and as we all know and suffer, they are instantiated by the system. Therefore, we can not pass the view through the BankAccount class constructor.
 
 We could have avoided adding this method by creating some kind of presenter, using the Account object there instead of calling it from the Activity. We consider it would make the code more complex and as it’s just a kata we’ve decided not to do so.
 
-<h2>Extracting the acceptance criteria</h2>
+## Extracting the acceptance criteria
 Let's start by describing the best-case workflow for tackling this problem. The starting point should ideally be a user story defining what needs to be done, who are we building it for, and why we are building it. For further information about how to write users stories, visit this <a href="https://sprint.ly/blog/agile-user-stories/?utm_content=buffer2dda2">link</a>
 
 The starting point should be a <a href="http://dannorth.net/whats-in-a-story/">user story</a> defining: What needs to be done, who are we building it for and why we are building it.
@@ -88,7 +89,7 @@ The acceptance criteria that we have came up with for the <b>“Show account sta
 <b>And</b> the statement lines should contain the transaction amount, date and running balance
 
 
-<h2>Setting up the project</h2>
+## Setting up the project
 
 Before getting our hands dirty with the code, we have to configure the tools that we are going to use to write our tests. We have chosen <a href="http://junit.org/junit4/">JUnit</a>, <a href="http://mockito.org/">Mockito</a> and <a href="https://google.github.io/android-testing-support-library/docs/espresso/">Espresso</a> for assertions in Android views. We have to add their dependencies to the project build.gradle as follows:
 
@@ -124,7 +125,7 @@ For the sake of clarity of this exercise, we are going to use the default source
 
 In a real project we will need to run all the unit tests alone to ensure that they are passing and checking the current step in the inner TDD loop. That is why is a good idea to separate them.
 
-<h2>Writing an acceptance test for the acceptance criteria</h2>
+## Writing an acceptance test for the acceptance criteria
 
 <img src="http://panavtec.me/wp-content/uploads/2016/04/outside-in.png" alt="outside-in" width="573" height="394" class="aligncenter size-full wp-image-1728" />
 
@@ -148,7 +149,7 @@ To assert our views in Android (check the then phase) we are going to use Espres
 
 That is it for now. We have reviewed the basic concepts about TDD and, more specifically, the outside-in approach. In the next post we will start creating our first acceptance test and we will dive into the inner TDD loop until we get our feature working. Stay tuned!
 
-<h2>References and further reading</h2>
+## References and further reading
 <ul>
 	<li><a href="https://www.youtube.com/watch?v=XHnuMjah6ps">Sandro's Outside-in screencast</a></li>
 	<li><a href="http://www.growing-object-oriented-software.com/">Growing Object-Oriented Software Guided by Tests</a></li>

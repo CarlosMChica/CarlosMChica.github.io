@@ -6,6 +6,8 @@ title: Retain &amp; restore recycler view scroll position
 date: 2015-06-22 17:00:00 +00:00
 image:
     src: /assets/img/restore-position.jpg
+categories: Android
+
 ---
 
 If you come to a situation where you need to retain the scroll position of a recycler view (i.e. configuration change, going back on a certain flow), you might think that you have a retain and restore the scroll manually. Yes, in fact, you have to, but LayoutManager has a convenient API that makes things a bit easier.
@@ -67,7 +69,7 @@ private void restoreLayoutManagerPosition() {
 
 Voila!
 
-<strong>Personal thoughts</strong>
+## Personal thoughts
 
 IMO the LayoutManager should keep the restored instance state and apply it once the dataset gets loaded, this would definitely make the code much cleaner and stylish. Instead, what it does under the hood is discard the pendingScrollPosition if the attached recyclerView does not have items when onRestoreInstanceState method is called on the layout manager.
 

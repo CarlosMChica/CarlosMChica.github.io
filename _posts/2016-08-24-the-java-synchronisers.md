@@ -7,14 +7,7 @@ date: 2016-08-24 10:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
     href: /assets/img/synchronisation.jpg
-tags:
-- java
-- threading
-- synchronization
-
-canonical:
-    name: my personal blog
-    href: https://carlosmchica.github.io/the-java-synchronisers/
+categories: Java
 
 ---
 

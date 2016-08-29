@@ -13,11 +13,11 @@ css: ['index.css', 'sidebar-popular-repo.css']
             </span>
             <span class="meta-info hvr-grow">
                 <span class="octicon octicon-organization"></span>
-                <a href="{{ site.company_url }}" target="_blank">{{ site.company }}</a>
+                <a href="{{ site.company_url }}">{{ site.company }}</a>
             </span>
             <span class="meta-info hvr-grow">
                 <span class="octicon octicon-mark-github"></span>
-                <a href="{{ site.github_url }}" target="_blank">@{{ site.name }}</a>
+                <a href="{{ site.github_url }}" target="_blank">@{{ site.github_user }}</a>
             </span>
         </div>
     </div>
@@ -33,7 +33,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 {% for post in paginator.posts %}
                 <li class="post-list-item">
                     <h2 class="post-list-title">
-                        <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                        <a class="hvr-underline-from-center" href="{{ post.url }}">{{ post.title }}</a>
                     </h2>
                     <p class="post-list-description">
                         {{ post.excerpt | strip_html | strip }}

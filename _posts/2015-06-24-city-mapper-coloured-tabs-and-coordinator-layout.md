@@ -4,6 +4,7 @@ asset-type: post
 name: City mapper coloured tabs and coordinator layout
 title: 'City mapper coloured tabs and coordinator layout'
 date: 2015-06-24 17:00:00 +00:00
+categories: Android 
 
 ---
 
@@ -13,7 +14,7 @@ One of the widgets I like the most on the app are the coloured tabs, especially 
 
 <img src="https://raw.githubusercontent.com/cmc00022/CityMapperTabs/master/art/city%20mapper%20tabs.gif" alt="gif" />
 
-<strong>Source code</strong>
+## Source code
 
 I created a <a href="https://github.com/cmc00022/CityMapperTabs" target="_blank">demo</a> project on GitHub to show how to implement the coloured tabs along with using the new coordinator layout.
 Enjoy

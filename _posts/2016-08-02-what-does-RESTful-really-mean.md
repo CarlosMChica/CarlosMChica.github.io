@@ -6,6 +6,7 @@ title: 'What does RESTful really mean'
 date: 2016-08-02 17:00:00 +00:00
 image:
     href: /assets/img/RESTful.png
+categories: REST Architecture
 
 ---
 
@@ -23,29 +24,29 @@ The term REST stands for "REpresentational State Transfer". A possible formal de
 
 To consider applications as RESTful, applications need to conform to the following REST constraints. Complying with the constraints enables a distributed hypermedia system to have the following desirable non-functional properties: performance, scalability, simplicity, extensibility, visibility, portability and reliability.
 
-* Client-server
+### Client-server
 
 A client-server model favours  separation of concerns so that clients are not concerned with data storage. Thus, clients code *portability* is improved. On the other hand, the server is not concerned about user interface or user state, so that server can be *simpler* and more *scalable*. Servers and clients can be developed independently, as long as they conform to the defined contract.
 
-* Stateless
+### Stateless
 
 Client context is never stored on the server between requests. Each request has to contain all the necessary information. A stateless server improves *scalability* by allowing the server to quickly free resources and simplifies implementation. *Reliability* eases recovering from partial failures. *Visibility*, monitoring system does not have to look beyond a single request to determine the nature of the request.
 
 One of the drawbacks of having a stateless server is decreased network performance as all the needed data has to be sent in each request.
 
-* Cacheable
+### Cacheable
 
 REST applications are web systems; therefore, clients and intermediaries can cache responses. Responses themselves must be defined as cacheable, or not, to prevent clients from reusing stale data that could reduce *reliability*. If stale data in the cache differs significantly from the data that would have been generated the request been handled by the server. Caching could eliminate some client-server interaction, thus improving *scalability*, *efficiency* and user-perceived *performance* by reducing average latency.
 
-* Uniform interface
+### Uniform interface
 
 Using a uniform interface simplifies and decouples the architecture and favours the independent evolution of different parts. As explained later on in this post, URIs, resources and hypermedia help to produce a standard interface that improves *visibility* of interactions, *simplifies* the overall system architecture and encourage independent evolution. The trade-off is that it degrades *efficiency* since information is transferred in a standard format rather one which is particular to an application's needs.
 
-* Layered system
+### Layered system
 
 Using a layered system reduces complexity by constraining component behaviour such that each element cannot access beyond its immediate layer. Favours substrate independence by restricting knowledge of other parts of the system. Layers can encapsulate legacy components and protect new services from legacy clients. Intermediaries can be used to improved *scalability* by enabling load balancing across networks. The main trade-off is that layered system add overhead and latency to the data processing, therefore, reducing user-perceived *performance*.
 
-* Code-On-Demand (Optional)
+### Code-On-Demand (Optional)
 
 REST allows clients to extend their functionality by downloading and executing code scripts. This *simplifies* clients and improves *extensibility*. On the other hand, it reduces *visibility*, that's why is only an optional constraint.
 
