@@ -1,38 +1,58 @@
-<div class="row">
+<div id="container-blog">
 
-    <div class="col-md-8">
+	<section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
+		<div class="container">
+			<div id="jumbotron-meta-info">
+				<h1>{{ page.title }}</h1>
+				<span class="meta-info">
+					<span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Take notes about everything new
+				</span>
+			</div>
+		</div>
+	</section>
 
-        <!-- Blog list -->
-        <ul id="posts-list">
-            {% for post in site.posts %}
-            <li class="posts-list-item">
-                <div class="posts-content">
-                    <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-		    <a class="posts-list-name bubble-float-left" href="{{post.url }}">{{ post.title }}</a>
-                    <span class='circle'></span>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-8">
 
-        <!-- Pagination -->
-        {% include pagination.html %}
+				<!-- Blog list -->
+				<ul id="posts-list">
+					{% for post in site.posts %}
+					<li class="posts-list-item">
+						<div class="posts-content">
+							<span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+							<a class="posts-list-name bubble-float-left" href="{{post.url }}">{{ post.title }}</a>
+							<span class='circle'></span>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
 
-        <!-- Comments -->
-        {% include disqus-comments.html %}
+				<!-- Pagination -->
+				{% include pagination.html %}
 
-    </div>
+				<!-- Comments -->
+				{% include disqus-comments.html %}
 
-    <div class="col-md-4">
-        {% include sidebar-post-tag.html %}
-    </div>
+			</div>
 
+			<div class="col-md-4">
+				{% include sidebar-post-tag.html %}
+			</div>
+
+		</div>
+	</section>
 </div>
+
 <script>
     $(document).ready(function(){
 
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
 
     });
 </script>

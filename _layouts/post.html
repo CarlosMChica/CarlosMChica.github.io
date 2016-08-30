@@ -2,33 +2,69 @@
 layout: default
 css: ['sidebar-post-nav.css']
 ---
-{% include jumbotron.html %}
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
 
-	<div class="row">
+<div id="container-post">
+	<section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
+		<div class="container">
+			<div id="jumbotron-meta-info">
+				<h1>{{ page.title }}</h1>
+				<span class="meta-info">
+					{% if page.date %}
+					<span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }}
+					{% endif %}
 
-		{% if page.no-post-nav %}
-		<div class="col-md-12 markdown-body">
+					{% assign text = page.content %}
+					{% include read_time.html %}
 
-			{{ content }}
+					{% for category in page.categories %}
+					<span class="category  octicon octicon-tag"></span>
+					{{ category }}
+					{% endfor %}
 
-			<!-- Comments -->
-			{% include disqus-comments.html %}
+				</span>
+			</div>
 		</div>
-		{% else %}
-		<div class="col-md-8 markdown-body">
+	</section>
+	
+	<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
 
-			{{ content }}
+		<div class="row">
 
-			<!-- Comments -->
-			{% include disqus-comments.html %}
+			{% if page.no-post-nav %}
+			<div class="col-md-12 markdown-body">
+
+				{{ content }}
+
+				<!-- Comments -->
+				{% include disqus-comments.html %}
+			</div>
+			{% else %}
+			<div class="col-md-8 markdown-body">
+
+				{{ content }}
+
+				<!-- Comments -->
+				{% include disqus-comments.html %}
+			</div>
+
+			<div class="col-md-4">
+				{% include sidebar-post-nav.html %}
+			</div>
+			{% endif %}
+
 		</div>
 
-		<div class="col-md-4">
-			{% include sidebar-post-nav.html %}
-		</div>
-		{% endif %}
+	</article>
+</div>
+<script>
+    $(document).ready(function(){
 
-	</div>
+        // Enable bootstrap tooltip
+        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 
-</article>
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>

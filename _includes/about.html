@@ -1,78 +1,93 @@
-<div class="about row">
+<div id="container-about">
+	<section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
+		<div class="container">
+			<div id="jumbotron-meta-info">
+				<h1>{{ page.title }}</h1>
+				<span class="meta-info">
+					{{ page.subtitle }}
+				</span>
+			</div>
+		</div>
+	</section>
 
-    <div class="col-md-8">
+	<section class="container">
+		<div class="about row">
 
-	<p class="post-list-description">I am a developer who is constantly looking for new ways to master the art of crafting software. I firmly believe in the software craftsmanship principles and base my journey towards mastery on them.
+			<div class="col-md-8">
 
-	I have been working professionally as an Android developer for more than 3 years. I am currently focus on mastering a new set of skills that will let me continue to grow and make progress in my career.</p>
+				<p class="post-list-description">I am a developer who is constantly looking for new ways to master the art of crafting software. I firmly believe in the software craftsmanship principles and base my journey towards mastery on them.
 
-        <h2>Contact</h2>
+				I have been working professionally as an Android developer for more than 3 years. I am currently focus on mastering a new set of skills that will let me continue to grow and make progress in my career.</p>
 
-        <ul>
-            <li>Email：<a href="mailto:{{ site.email }}" target="_top">{{ site.email }}</a></li>
-            <li>GitHub：<a href="{{ site.github_url }}">{{ site.github_url }}</a></li>
-	    <li>Twitter：<a href="{{ site.twitter_url }}">@{{ site.twitter_user }}</a></li>
+				<h2>Contact</h2>
 
-        </ul>
+				<ul>
+					<li>Email：<a href="mailto:{{ site.email }}" target="_top">{{ site.email }}</a></li>
+					<li>GitHub：<a href="{{ site.github_url }}">{{ site.github_url }}</a></li>
+					<li>Twitter：<a href="{{ site.twitter_url }}">@{{ site.twitter_user }}</a></li>
+
+				</ul>
 
 
-        {% if site.skill_software_keywords %}
-        <h2>Skill Keywords</h2>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Software Engineer Keywords</h3>
-            </div>
-            <div class="panel-body">
-                {% for keyword in site.skill_software_keywords %}
-                <button class="btn btn-default" type="button">{{ keyword }}</button>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
+				{% if site.skill_software_keywords %}
+				<h2>Skill Keywords</h2>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Software Engineer Keywords</h3>
+					</div>
+					<div class="panel-body">
+						{% for keyword in site.skill_software_keywords %}
+						<button class="btn btn-default" type="button">{{ keyword }}</button>
+						{% endfor %}
+					</div>
+				</div>
+				{% endif %}
 
-        {% if site.skill_j2ee_keywords %}
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">J2EE Developer Keywords</h3>
-            </div>
-            <div class="panel-body">
-                {% for keyword in site.skill_j2ee_keywords %}
-                <button class="btn btn-default" type="button">{{ keyword }}</button>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
+				{% if site.skill_j2ee_keywords %}
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">J2EE Developer Keywords</h3>
+					</div>
+					<div class="panel-body">
+						{% for keyword in site.skill_j2ee_keywords %}
+						<button class="btn btn-default" type="button">{{ keyword }}</button>
+						{% endfor %}
+					</div>
+				</div>
+				{% endif %}
 
-        {% if site.skill_mobile_app_keywords %}
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Mobile Developer Keywords</h3>
-            </div>
-            <div class="panel-body">
-                {% for keyword in site.skill_mobile_app_keywords %}
-                <button class="btn btn-default" type="button">{{ keyword }}</button>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
+				{% if site.skill_mobile_app_keywords %}
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Mobile Developer Keywords</h3>
+					</div>
+					<div class="panel-body">
+						{% for keyword in site.skill_mobile_app_keywords %}
+						<button class="btn btn-default" type="button">{{ keyword }}</button>
+						{% endfor %}
+					</div>
+				</div>
+				{% endif %}
 
-        {% if site.skill_web_keywords %}
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Web Developer Keywords</h3>
-            </div>
-            <div class="panel-body">
-                {% for keyword in site.skill_web_keywords %}
-                <button class="btn btn-default" type="button">{{ keyword }}</button>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
+				{% if site.skill_web_keywords %}
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Web Developer Keywords</h3>
+					</div>
+					<div class="panel-body">
+						{% for keyword in site.skill_web_keywords %}
+						<button class="btn btn-default" type="button">{{ keyword }}</button>
+						{% endfor %}
+					</div>
+				</div>
+				{% endif %}
 
-    </div>
+			</div>
 
-    <div class="col-md-4">
-        {% include sidebar-popular-repo.html %}
-    </div>
+			<div class="col-md-4">
+				{% include sidebar-popular-repo.html %}
+			</div>
 
+		</div>
+	</section>
 </div>

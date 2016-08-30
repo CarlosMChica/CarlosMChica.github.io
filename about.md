@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default 
 title: Software Craftsman Apprentice
 subtitle: Codurance
 menu: about
