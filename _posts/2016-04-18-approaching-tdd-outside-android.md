@@ -7,6 +7,7 @@ date: 2016-04-18 17:00:00 +00:00
 image:
     href: /assets/img/outside-in.png
 categories: Android TDD
+permalink: /:title/
 
 ---
 
