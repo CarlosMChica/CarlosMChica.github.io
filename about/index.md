@@ -6,4 +6,4 @@ css: ['about.css', 'sidebar-popular-repo.css']
 
 ---
 
-{% include about.html %}
+{% include /pages/about.html %}

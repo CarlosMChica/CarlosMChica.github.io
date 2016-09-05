@@ -4,4 +4,4 @@ title: Open Source Projects
 css: ['open-source.css']
 javascript: ['underscore-min.js']
 ---
-{% include open-source-page.html %}
+{% include pages/open-source.html %}
