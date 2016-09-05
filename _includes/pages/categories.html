@@ -1,5 +1,4 @@
 <div id="container-categories">
-
 	<section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
 		<div class="container">
 			<div id="jumbotron-meta-info">
@@ -10,8 +9,7 @@
 			</div>
 		</div>
 	</section>
-
-	<section>
+	<section class="container">
 		<div class="tags-expo-list">
 			{% for tag in site.categories %}
 			<a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
