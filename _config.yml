@@ -43,7 +43,13 @@ source:      .
 destination: ./_site
 
 quiet:    false
-defaults: []
+defaults:
+        - scope:
+                path: "" # an empty string here means all files in the project
+                type: "posts" # previously `post` in Jekyll 2.2.
+          values:
+                  #default post perma link 
+                  permalink: /:title/
 
 kramdown:
   input: GFM
@@ -77,6 +83,7 @@ navs:
   -
     href: /about
     label: About
+
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show

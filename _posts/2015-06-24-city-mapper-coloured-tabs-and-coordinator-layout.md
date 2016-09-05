@@ -7,7 +7,6 @@ date: 2015-06-24 17:00:00 +00:00
 categories: Android 
 image:
     href: /assets/img/tabs.png
-permalink: /:title/
 
 ---
 

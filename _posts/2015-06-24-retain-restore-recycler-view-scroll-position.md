@@ -7,7 +7,6 @@ date: 2015-06-22 17:00:00 +00:00
 image:
     href: /assets/img/restore-position.jpg
 categories: Android
-permalink: /:title/
 
 ---
 

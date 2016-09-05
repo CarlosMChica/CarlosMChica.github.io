@@ -7,7 +7,6 @@ date: 2016-08-19 10:00:00 +00:00
 image:
     href: /assets/img/maven-logo.png
 categories: Java
-permalink: /:title/
 
 ---
 

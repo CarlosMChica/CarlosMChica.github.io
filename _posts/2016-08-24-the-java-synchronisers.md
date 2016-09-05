@@ -8,7 +8,6 @@ author: Carlos Morera de la Chica
 image:
     href: /assets/img/synchronisation.jpg
 categories: Java
-permalink: /:title/
 
 ---
 
