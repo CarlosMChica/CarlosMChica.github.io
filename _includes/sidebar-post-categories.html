@@ -1,9 +1,9 @@
-<h3>Categories</h3>
+<h3><a href="/blog/categories">Categories</a></h3>
 <div id="blog-categories">
     <ul class="list-group">
         {% for category in site.categories %}
         <li class="list-group-item">
-            {{ category | first }}
+		<a href="/blog/categories/#{{ category[0] | slugify }}">{{ category | first }}</a>
             <span class="badge">{{ category[1].size }}</span>
         </li>
         {% endfor %}
