@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: page
 title: Software Craftsman Apprentice
 subtitle: Codurance
 css: ['about.css', 'sidebar-popular-repo.css']

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Categories
 subtitle: Hola, hola
 css: ['categories.css']
