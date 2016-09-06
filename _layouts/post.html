@@ -17,8 +17,9 @@ javascript: ['geo-pattern.js']
 					{% include read_time.html %}
 
 					{% for category in page.categories %}
-					<span class="category  octicon octicon-tag"></span>
-					{{ category }}
+					<a href="/blog/categories/#{{ category | slugify }}">
+						<span class="category octicon octicon-tag"></span>{{ category }}
+					</a>
 					{% endfor %}
 
 				</span>
