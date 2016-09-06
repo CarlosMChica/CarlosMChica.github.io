@@ -6,7 +6,8 @@ title: 'What does RESTful really mean'
 date: 2016-08-02 17:00:00 +00:00
 image:
     href: /assets/img/RESTful.png
-categories: REST Architecture
+categories: Architecture
+tags: REST
 
 ---
 
