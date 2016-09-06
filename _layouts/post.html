@@ -1,6 +1,8 @@
----
+--
 layout: default
 css: ['sidebar-post-nav.css']
+javascript: ['geo-pattern.js']
+
 ---
 
 <div id="container-post">
@@ -56,15 +58,3 @@ css: ['sidebar-post-nav.css']
 
 	</article>
 </div>
-<script>
-    $(document).ready(function(){
-
-        // Enable bootstrap tooltip
-        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-
-        $('.geopattern').each(function(){
-            $(this).geopattern($(this).data('pattern-id'));
-        });
-
-    });
-</script>

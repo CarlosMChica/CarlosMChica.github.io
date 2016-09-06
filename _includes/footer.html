@@ -28,6 +28,10 @@
     <script src="/assets/js/{{javascript}}"></script>
     {% endfor %}
 
+    {% for javascript in layout.javascript %}
+    <script src="/assets/js/{{javascript}}"></script>
+    {% endfor %}
+
     {% if site.analytics.google.tracking_id %}
     <!-- Google Analytics -->
     <div style="display:none">
