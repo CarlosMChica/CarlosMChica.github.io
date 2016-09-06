@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Categories
-subtitle: Hola, hola
+subtitle: 
 css: ['categories.css']
 javascript: ['geo-pattern.js']
 
