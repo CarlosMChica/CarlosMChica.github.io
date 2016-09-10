@@ -29,8 +29,9 @@ css: ['index.css', 'sidebar-popular-repo.css']
 					</p>
 					{% for category in post.categories %}
 					<p class="post-category">
-					<span class="category octicon octicon-tag"></span>
-					{{ category }}
+					<a href="/blog/categories/#{{ category | slugify }}">
+						<span class="category octicon octicon-tag"></span>  {{ category }}
+					</a>
 					</p>
 					{% endfor %}
 					</p>
