@@ -73,6 +73,8 @@ With the user story completed, we can now define the acceptance criteria - the s
 
 That been said, once we got the user story, the next step would be to extract the conditions that the software must satisfy to be accepted, known as the <a href="http://www.seguetech.com/blog/2013/03/25/characteristics-good-agile-acceptance-criteria">acceptance criteria</a>. Those acceptance criteria will define a series of results that must be validated to consider that the feature is done.
 
+<a name="acceptance-criteria"></a>
+
 The acceptance criteria that we have came up with for the <b>“Show account statement”</b> story are:
 
 <b>Scenario 1: Account with transactions</b>
