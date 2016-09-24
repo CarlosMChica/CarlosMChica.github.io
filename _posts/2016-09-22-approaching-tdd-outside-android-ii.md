@@ -16,7 +16,7 @@ In this second post, we will focus more on the practical side. We will show how 
 
 We will be explaining everything following the flow of <b>Outside-In TDD</b> in a step by step fashion.
 
-<h2>Outer loop - Acceptance test</h2>
+## Outer loop - Acceptance test
 
 As we discussed early on, we have to show the statement lines that compose an account statement. Concepts such as <b>Statement</b>, <b>Statement line</b> and <b>Transactions</b> are part of our domain. We will follow them throughout the post and code.
 
@@ -51,7 +51,7 @@ Once we have finished writing the acceptance test and we see it <b>failing for t
 
 <img src="http://panavtec.me/wp-content/uploads/2016/08/acc2.png" alt="Outside-in acceptance test coverage" width="831" height="271" class="aligncenter size-full wp-image-1785" />
 
-<h2>Inner loop - Unit test</h2>
+## Inner loop - Unit test
 
 The first collaborator to implement is the one in the outer layer of the system, in this case, the <b>ShowStatementActivity</b>.
 
@@ -100,7 +100,7 @@ Now It's time to create the BankAccount <b>withdraw</b> operation.
 
 It is important to note that in this case, inheritance is used to specialise the transaction behaviour related to the amount and not for code reuse. Inheritance is a mechanism aimed for specialisation, not for code reuse. The code is now much more expressive, and the responsibilities are where we think they belong.
 
-<h2>Conclusion</h2>
+## Conclusion
 
 We have reviewed how to write an acceptance test based on the acceptance criteria. As design occurs upfront, we have decided to create the collaborators that we know that were needed at that time. Lastly, we started to explore our system with the subsequent inner loops. 
 
