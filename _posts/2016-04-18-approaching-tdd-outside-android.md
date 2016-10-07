@@ -129,7 +129,7 @@ In a real project we will need to run all the unit tests alone to ensure that th
 
 ## Writing an acceptance test for the acceptance criteria
 
-<img src="http://panavtec.me/wp-content/uploads/2016/04/outside-in.png" alt="outside-in" width="573" height="394" class="aligncenter size-full wp-image-1728" />
+<img src="/assets/img/outside-in.png" alt="outside-in" class="img-responsive"/>
 
 This image show the testing flow that we are going to follow: the double loop of TDD. The outside loop corresponds to the progress of our feature and the inner loop corresponds to the individual functionals required to implement the feature.
 
