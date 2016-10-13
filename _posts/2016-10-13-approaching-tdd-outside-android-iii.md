@@ -9,7 +9,7 @@ categories: Android TDD
 
 ---
 
-<a href="/2016/09/29/approaching-tdd-outside-android-ii/">In the previous post</a>, we wrote the acceptance test as a first step and started creating the classes on the entry points of our system. In this post, we will finish implementing the system, and will summarize what we have learnt during the process.
+In the <a href="/approaching-tdd-outside-android-ii/">previous post</a>, we wrote the acceptance test as a first step and started creating the classes on the entry points of our system. In this post, we will finish implementing the system, and will summarize what we have learnt during the process.
 
 ## Inner loop continuation
 To finish the <b>BankAccount</b> class, we need to implement its last public method, <b>showStatement</b>. Let's dive into the next iteration of the inner loop cycle.
