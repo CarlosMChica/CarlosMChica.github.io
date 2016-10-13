@@ -10,7 +10,7 @@ categories: Android TDD
 
 ---
 
-In the previous <a href="https://carlosmchica.github.io/approaching-tdd-outside-android/">post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
+In the <a href="/approaching-tdd-outside-android/">previous  post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
 
 In this second post, we will focus more on the practical side. We will show how to build the acceptance test from the acceptance criteria, how acceptance tests and unit tests fit in the <b>double loop</b> of TDD and how we rely on them to guide us through the implementation.
 
@@ -104,4 +104,4 @@ It is important to note that in this case, inheritance is used to specialise the
 
 We have reviewed how to write an acceptance test based on the acceptance criteria. As design occurs upfront, we have decided to create the collaborators that we know that were needed at that time. Lastly, we started to explore our system with the subsequent inner loops. 
 
-In the next post of the series, we will finish implementing the system. We will conclude summarising some of the most valuable insights that we have learnt during the process.
+In the <a href="/approaching-tdd-outside-android-iii/">next post</a> of the series, we will finish implementing the system. We will conclude summarising some of the most valuable insights that we have learnt during the process.

@@ -149,7 +149,7 @@ For the test implementation of this kata we are going to use the notation <a hre
 
 To assert our views in Android (check the then phase) we are going to use Espresso, which provides a simple way to test the state of the UI.
 
-That is it for now. We have reviewed the basic concepts about TDD and, more specifically, the outside-in approach. In the next post we will start creating our first acceptance test and we will dive into the inner TDD loop until we get our feature working. Stay tuned!
+That is it for now. We have reviewed the basic concepts about TDD and, more specifically, the outside-in approach. In the <a href="/approaching-tdd-outside-android-ii/">next post</a> we will start creating our first acceptance test and we will dive into the inner TDD loop until we get our feature working. Stay tuned!
 
 ## References and further reading
 <ul>
