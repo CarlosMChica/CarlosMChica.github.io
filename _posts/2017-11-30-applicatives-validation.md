@@ -1,7 +1,7 @@
 ---
 layout: post
 name: 2017-11-30-applicatives-validation
-title: Applicative Functors and data validation
+title: Applicative Functors and data validation, part I
 date: 2017-11-30 07:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
