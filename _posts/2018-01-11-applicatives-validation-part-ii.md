@@ -15,6 +15,8 @@ tags:
 
 [In the first part of this series](https://codurance.com/2017/11/30/applicatives-validation/), we went through a basic introduction to Functor and Applicative Functor. In this second part, we will go through an exercise to show how to use them to perform input data validation.
 
+## Exercise
+
 Create the types:
 
 * `Address`
@@ -27,7 +29,7 @@ Create the functions:
 * `makeBody` that takes a String and validates that it is not empty. It returns a `Body` value wrapped in a `Just` if it is valid or `Nothing` otherwise.
 * `makeEmail` that takes as arguments three strings, `fromAddress`, `toAddress`, and `body`. It returns an email instance wrapped in `Just` if `fromAddress`, `toAddress` and `body` are valid, `Nothing` otherwise.
 
-Types:
+### Types
 
 ```
 type FromAddress = Address
@@ -48,7 +50,7 @@ For instance the `Email` constructor has the following type signature:
 Email :: Address -> Address -> Body -> Email
 ```
 
-Functions:
+### Functions
 
 ```
 makeAddress :: String -> Maybe Address
@@ -305,8 +307,6 @@ AccSuccess (Email (Address "carlos@codurance.com") (Address "info@codurance.com"
 ```
 
 ## Conclusion
-
-To recap:
 
 * Use Maybe when you don't need to carry any information about the error.
 * Use Either when you need to carry information about a single possible error or the first error when more than one is possible.
